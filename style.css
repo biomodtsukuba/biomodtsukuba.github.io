@@ -1,0 +1,67 @@
+body {
+	background: #a1c6ba;
+}
+.overflow-hidden{
+	overflow: hidden;
+}
+#content{
+	margin-top: 60px;
+}
+.article-outer {
+	margin: 40px 20px;
+	position: relative;
+}
+.article-outer:before {
+	content:  ".";
+	text-indent: -999em;
+	overflow: hidden;
+	position: absolute;
+	top: -10px;
+	width: 100%;
+	height: 10px;
+	background: url(images/top-border.png) repeat-x;
+}
+.article-outer:after {
+	content:  ".";
+	text-indent: -999em;
+	overflow: hidden;
+	position: absolute;
+	bottom: -10px;
+	width: 100%;
+	height: 10px;
+	background: url(images/bottom-border.png) repeat-x;
+}
+.article{
+	position: relative;
+	background: #f0f0f0;
+	padding: 20px;
+}
+.article:before {
+	content:  ".";
+	text-indent: -999em;
+	overflow: hidden;
+	position: absolute;
+	left: -10px;
+	top: 0;
+	height: 100%;
+	width: 10px;
+	background: url(images/left-border.png) repeat-y;
+}
+.article:after {
+	content:  ".";
+	text-indent: -999em;
+	overflow: hidden;
+	position: absolute;
+	right: -10px;
+	height: 100%;
+	width: 10px;
+	top: 0;
+	background: url(images/right-border.png) repeat-y;
+}
+h1,h2{
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	margin-bottom: 20px;
+}
